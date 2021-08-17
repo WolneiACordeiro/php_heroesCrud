@@ -87,7 +87,6 @@ body {
 .show-line-element {
     display: flex;
     justify-content: center;
-    margin-left: 25px;
     width: 20%;
     flex-direction: column;
     align-items: center;
@@ -95,6 +94,9 @@ body {
 
 #show-line-image {
     width: 80px;
+    height: 100%;
+    object-fit: cover;
+    object-position: 100% 0;
     background-color: #fff0;
 }
 
@@ -107,6 +109,8 @@ body {
     overflow: hidden;
     font-size: larger;
     font-weight: 500;
+    width: 80%;
+    text-align: center;
 }
 
 .show-line img {

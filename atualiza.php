@@ -10,7 +10,7 @@ include("conexao.php");
 <body>
 <div id="menu-bar">
         <div class="menu-bar-area">
-            <a href="inicial.php"><div class="menu-option"><img src="img/icons/home_white_24dp.svg" alt="Home"><span>Home</span></div></a>
+            <a href="index.php"><div class="menu-option"><img src="img/icons/home_white_24dp.svg" alt="Home"><span>Home</span></div></a>
             <a href="cadastro.php"><div class="menu-option"><img src="img/icons/add_white_24dp.svg" alt="Home"><span>Cadastrar</span></div></a>
         </div>
         
@@ -27,7 +27,7 @@ while ($exibe = mysqli_fetch_array($query)) {
 
     <div class="title-bar">
         <h1>Editar</h1>
-        <a href="inicial.php">Voltar</a>
+        <a href="index.php">Voltar</a>
     </div>
 
     <form action="atualizar.php" method="post">

@@ -9,6 +9,6 @@ $var_formato = $_POST["campo_formato"];
 
 mysqli_query($conexao,"UPDATE heroes SET nome =  '$var_nome', universo = '$var_universo', imagem = '$var_imagem', formato = '$var_formato' WHERE id = '$var_id'");
 
-header("location:inicial.php");
+header("location:index.php");
 
 ?>
