@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:wght@200;400;600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+    scroll-behavior: smooth;
+    font-family: 'Georama', sans-serif;
+}
+
+body {
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+
+.main-container-single {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.heroes-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    background-color: #00000033;
+}
+
+.heroes-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 50%;
+    height: fit-content;
+    min-height: 500px;
+    background-color: #00000033;
+    align-content: center;
+    margin-bottom: 150px;
+}
+
+.heroes-table-line {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    width: 80%;
+    height: 80%;
+}
+
+.heroes-table-gap {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.show-line, .show-line-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.show-line:nth-child(even) {background: #CCC}
+.show-line:nth-child(odd) {background: #FFF}
+
+.show-line-title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.show-line-element {
+    display: flex;
+    justify-content: center;
+    margin-left: 25px;
+    width: 20%;
+    flex-direction: column;
+    align-items: center;
+}
+
+#show-line-image {
+    width: 80px;
+    background-color: #fff0;
+}
+
+.show-main {
+    padding: 10px;
+}
+
+.show-line-element span {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: larger;
+    font-weight: 500;
+}
+
+.show-line img {
+    background-color: #0093E9;
+    width: 35px;
+    padding: 5px;
+}
+
+.show-line a img:hover {
+    filter: invert(35%);
+    transition: ease-in .2s;
+}
+
+.show-line-title {
+    background-color: #0093e9;
+    color: #fff;
+}
+
+.title-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.title-bar-heroes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 70px;
+}
+
+.title-bar h1, .title-bar-heroes h1 {
+    color: #fff;
+}
+
+.title-bar a, .title-bar-heroes a {
+    color: #fff;
+}
+
+#main label, #main input, #main select {
+    font-size: x-large;
+}
+
+#main label {
+    background-color: #0093e9;
+    padding: 0 10px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+#menu-bar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #00000033;
+    width: 100px;
+    height: 100%;
+    -webkit-animation-name: animateleft;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animateleft;
+    animation-duration: 0.4s
+}
+
+#menu-bar a {
+    text-decoration: none;
+}
+
+.menu-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0093e9;
+    color: #fff;
+    font-weight:600;
+    width: 80px;
+    height: 80px;
+    flex-direction: column;
+}
+
+.menu-option:hover {
+    cursor: pointer;
+    font-size: x-small;
+    transition: ease-in .1s;
+}
+
+.menu-option:hover > img{
+    width: 24px;
+    transition: ease-in .1s;
+}
+
+.menu-option img {
+    width: 35px;
+}
+
+.menu-bar-area {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    height: 30%;
+}
+
+@-webkit-keyframes animateleft {
+    from {left:-300px; opacity:0} 
+    to {left:0; opacity:1}
+  }
+  
+  @keyframes animateleft {
+    from {left:-300px; opacity:0}
+    to {left:0; opacity:1}
+  }
+
+
+
+
+
+
