@@ -146,6 +146,10 @@ body {
     margin-top: 70px;
 }
 
+.title-bar-search {
+    margin: 10px 0px;
+}
+
 .title-bar h1, .title-bar-heroes h1 {
     color: #fff;
 }

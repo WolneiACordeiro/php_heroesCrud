@@ -30,7 +30,8 @@ while ($exibe = mysqli_fetch_array($query)) {
         <a href="index.php">Voltar</a>
     </div>
 
-    <form action="atualizar.php" method="post">
+    <form action="atualizar.php" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="max_file_size" value="99999999">
 
         <div id="main" class="heroes-table">
                 <div class="heroes-table-line">
@@ -50,19 +51,13 @@ while ($exibe = mysqli_fetch_array($query)) {
                     </div>
                     <div class="heroes-table-gap">
                         <label for="campo_imagem">Imagem:</label>
-                        <div>
-                        <input type="text" value="<?php echo $exibe[3] ?>" name="campo_imagem" maxlength="50">
-                        <select name="campo_formato" id="format">
-                            <option value="<?php echo $exibe[4] ?>" selected hidden><?php echo $exibe[4] ?></option>
-                            <option value="JPG">JPG</option>
-                            <option value="PNG">PNG</option>
-                            <option value="JPEG">JPEG</option>
-                        </select>
-                        </div>
+                        <input type="file" name="arquivo" >
                     </div>
                     <div class="heroes-table-gap">
                         <input type="submit" value="Salvar">
                     </div>
+                    </div>
+                    
                 </div>
         </div>
     </form>

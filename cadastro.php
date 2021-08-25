@@ -19,41 +19,37 @@
         <a href="index.php">Voltar</a>
     </div>
 
-    <form action="inserir.php" method="post">
+    <form action="inserir.php" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="max_file_size" value="99999999">
 
-    <div id="main" class="heroes-table">
-            <div class="heroes-table-line">
-                <div class="heroes-table-gap">
-                    <label for="campo_nome">Herói:</label>
-                    <input type="text" name="campo_nome" maxlength="50">
-                </div>
-                <div class="heroes-table-gap">
-                    <label for="campo_universo">Universo:</label>
-                    <select name="campo_universo" id="universe">
-                        <option value="Marvel">Marvel</option>
-                        <option value="DC">DC</option>
-                        <option value="Outro">Outro</option>
-                    </select>
-                </div>
-                <div class="heroes-table-gap">
-                    <label for="campo_imagem">Imagem:</label>
-                    <div>
-                    <input type="text" name="campo_imagem" maxlength="50">
-                    <select name="campo_formato" id="format">
-                        <option value="JPG">JPG</option>
-                        <option value="PNG">PNG</option>
-                        <option value="JPEG">JPEG</option>
-                    </select>
+        <div id="main" class="heroes-table">
+                <div class="heroes-table-line">
+                    <div class="heroes-table-gap">
+                        <label for="campo_nome">Herói:</label>
+                        <input type="text" name="campo_nome" maxlength="50">
+                    </div>
+                    <div class="heroes-table-gap">
+                        <label for="campo_universo">Universo:</label>
+                        <select name="campo_universo" id="universe">
+                            <option value="Marvel">Marvel</option>
+                            <option value="DC">DC</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="heroes-table-gap">
+                        <label for="campo_imagem">Imagem:</label>
+                        <input type="file" name="arquivo[]">
+                    </div>
+                    <div class="heroes-table-gap">
+                        <input type="submit">
                     </div>
                 </div>
-                <div class="heroes-table-gap">
-                    <input type="submit">
-                </div>
-            </div>
-    </div>
+        </div>
+
+    </form>
 </div>
 
-</form>
+
 	
 </body>
 </html>
